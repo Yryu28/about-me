@@ -1,0 +1,14 @@
+.cover {
+  background-size: 500px 400px;
+  background-position: center bottom;
+  height: 200px;
+}
+
+.sub-cover {
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.cover-home{
+  background-image: url(../image/majan.png);
+}

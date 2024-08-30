@@ -9,9 +9,8 @@ html {
 body {
     font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
     line-height: 2.0;
-    color: black;
-    background-color: rgb(68, 110, 62);
     color: rgb(255, 255, 255);
+    background-color: rgb(68, 110, 62);
 }
 
 a {
@@ -29,9 +28,8 @@ img {
     text-align: center;
 }
 
-/* 見出し */
-.font-english {
-    font-family: "Arial Black", "Impact", "MS Gothic";
+.page-header {
+    padding-top: 1rem;
 }
 
 .page-title {
@@ -40,12 +38,6 @@ img {
     margin-top: 1rem;
     line-height: 1.4;
     color: black;
-}
-
-/* ヘッダー ------------------------------- */
-
-.page-header {
-    padding-top: 1rem;
 }
 
 .main-nav {
@@ -99,82 +91,64 @@ ul.ddmenu {
     padding-left: 5.3rem;
 }
 
-/* 自己紹介 ------------------------------- */
+/* 見出し */
+.font-english {
+    font-family: "Arial Black", "Impact", "MS Gothic";
+}
 
-.about-me {
+.page-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1rem;
+    line-height: 1.4;
+    color: black;
+}
+
+/* フォーム ------------------------------- */
+
+.contact {
+    padding: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #333;
+    border-radius: 8px;
+}
+
+.contact-form {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 2rem 0;
 }
 
-.profile-image img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 5px solid #fff;
-    margin-bottom: 1rem;
-}
-
-.profile-content {
-    max-width: 600px;
-}
-
-.profile-content h3 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.profile-content p {
+.contact-form label {
     font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    font-size: 1rem;
+    padding: 0.5rem;
     margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
 }
 
-/* メイン ------------------------------- */
-
-.wrapper {
-    padding: 1rem;
-    padding-top: 10rem;
+.contact-form button {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #563f74;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
 }
 
-.ramen-list {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
+.contact-form button:hover {
+    background-color: #ceafeb;
 }
 
-.ramen-item {
-    background-color: #333;
-    padding: 1rem;
-    border-radius: 8px;
-    text-align: center; /* 画像とテキストを中央揃え */
-    border-top: 20px;
-}
-
-.ramen-item h4 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-}
-
-.ramen-item img {
-    border-radius: 8px;
-    margin-bottom: 1rem;
-}
-
-.ramen-item p {
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
-}
-
-.resize {
-    max-width: 500;
-    min-width: 324;
-    max-height: 500;
-}
-.resize img {
-    width:100%;
-}
+/* フッター ------------------------------- */
 
 .page-footer {
     background-color: #333;
@@ -214,47 +188,49 @@ ul.ddmenu {
     font-size: 0.9rem;
 }
 
-
 @media (min-width: 800px) {
-    /* 見出し */
     .page-title {
         font-size: 3rem;
     }
 
-    /* ヘッダー */
     .main-nav {
         font-size: 2.5rem;
         justify-content: center;
-        padding-top: 0rem;
+        padding: 0rem;
     }
 
     .page-header {
         padding-top: 1rem;
     }
-
-    .cover {
-        background-size: cover;
-        height: 200px;
+    .game-item {
+        flex-direction: row;
+        align-items: center;
     }
 
-    /* ラーメン紹介の二段表示 */
-    .ramen-list {
-        grid-template-columns: repeat(2, 1fr);
+    .game-item img {
+        max-width: 80%;
+        margin-right: 3rem;
+        margin-left: 3rem;
+        margin-bottom: 0;
     }
 
-    .ramen-item {
-        background-color: #333;
-        padding: 1rem;
-        border-radius: 8px;
-        text-align: center; /* 画像とテキストを中央揃え */
+    .game-item p {
+        margin-top: 0;
+        flex-grow: 1;  /* 説明部分が残りのスペースを占める */
     }
-    .wrapper {
-        padding-top: 2rem;
+
+    .a.resize {
+        max-width: 80%;
+        max-height: 80%;
     }
-    
-    .resize img{
-        width: 500;
-        height: 500;
+
+    .item {
+        flex-direction: row;
     }
-    
+
+    .h4 {
+        font-size: 5rem;
+        text-align: center;
+    }
+
 }

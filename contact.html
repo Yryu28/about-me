@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/about-me/css/game.css">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+</head>
+<body>
+    <div class ="cover">
+        <header class="page-header">
+            <h2 class="page-title font-english">コンタクト</h2>
+            <nav class="main-nav">
+                <ul class = "ddmenu">
+                    <li><a href="index.html">Menu</a></li>
+                    <li><a href="ramen.html">Ramen</a></li>
+                    <li><a href="game.html">Game</a></li>
+                    <li><a href="character.html">Character</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <main>
+        <section class="contact">
+            <h1 class="page-title">Contact Us</h1>
+            <form action="submit_form.php" method="post" class="contact-form">
+                <label for="name">名前:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">メールアドレス:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">メッセージ:</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+
+                <button type="submit">送信</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <div class="footer-content">
+            <nav>
+                <ul class="footer-nav font-english">
+                    <li><a href="index.html">Menu</a></li>
+                    <li><a href="ramen.html">Ramen</a></li>
+                    <li><a href="game.html">Game</a></li>
+                    <li><a href="character.html">Character</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <p class="footer-text font-english">© 2024 Ryusei.</p>
+        </div>
+    </footer>
+</body>
+</html>
